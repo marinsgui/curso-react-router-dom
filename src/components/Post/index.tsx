@@ -1,4 +1,4 @@
-import { useParams, useSearchParams } from 'react-router-dom'
+import { useParams, useSearchParams, Outlet } from 'react-router-dom'
 
 export const Post = () => {
 
@@ -9,6 +9,7 @@ export const Post = () => {
     return (
         <div>
             <h1>Post {`Param: ${id}`} {`QS: ${qs}`}</h1>
+            <Outlet />
         </div>
     )
 }
